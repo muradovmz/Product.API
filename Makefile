@@ -38,10 +38,10 @@ all: test
 ## ====================
 
 publish_dll:
-	dotnet publish example-bi-directional-provider-dotnet.sln
+	dotnet publish Product.API.sln
 
 verify_swagger: 
-	./example-bi-directional-provider-dotnet/scripts/verify_swagger.sh
+	./Product.API/scripts/verify_swagger.sh
 
 ci:
 	@if make test; then \
@@ -78,7 +78,7 @@ deploy_target: can_i_deploy $(DEPLOY_TARGET)
 
 test:
 	@echo "\n========== STAGE: test ==========\n"
-	./example-bi-directional-provider-dotnet/scripts/verify_swagger.sh
+	./Product.API/scripts/verify_swagger.sh
 
 
 ## =====================
