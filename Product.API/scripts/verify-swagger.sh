@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 dotnet Product.API/bin/Debug/net6.0/Product.API.dll &
 API_PID=$!
