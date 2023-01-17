@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 
-dotnet Product.API/bin/Debug/net6.0/Product.API.dll &
+dotnet Product.API/Product.API/bin/Debug/net6.0/Product.API.dll &
 API_PID=$!
 
 
