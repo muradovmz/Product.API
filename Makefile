@@ -41,7 +41,7 @@ publish_dll:
 	dotnet publish Product.API.sln
 
 verify_swagger: 
-	./Product.API/scripts/verify_swagger.sh
+	.Product.API/Product.API/scripts/verify_swagger.sh
 
 ci:
 	@if make test; then \
@@ -78,7 +78,7 @@ deploy_target: can_i_deploy $(DEPLOY_TARGET)
 
 test:
 	@echo "\n========== STAGE: test ==========\n"
-	./Product.API/scripts/verify_swagger.sh
+	.Product.API/Product.API/scripts/verify_swagger.sh
 
 
 ## =====================
