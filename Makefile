@@ -25,7 +25,7 @@ VERIFIER_TOOL?=schemathesis
 ## Only deploy from main
 ## ====================
 
-ifeq ($(BRANCH),main)
+ifeq ($(BRANCH),master)
 	DEPLOY_TARGET=deploy
 else
 	DEPLOY_TARGET=no_deploy
