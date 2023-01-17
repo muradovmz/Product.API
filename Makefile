@@ -2,8 +2,8 @@
 # We often use them for demos and workshops, and Makefiles allow us to provide a consistent language and platform agnostic interface
 # for each project. You do not need to use Makefiles to use Pact in your own project!
 
-PACTICIPANT := "pactflow-example-bi-directional-provider-dotnet"
-GITHUB_REPO := "pactflow-example-bi-directional-provider-dotnet"
+PACTICIPANT := "Product.API"
+GITHUB_REPO := "Product.API"
 PACT_CLI_DOCKER_VERSION?=latest
 PACT_CLI_DOCKER_RUN_COMMAND?=docker run --rm -v /${PWD}:/${PWD} -w ${PWD} -e PACT_BROKER_BASE_URL -e PACT_BROKER_TOKEN pactfoundation/pact-cli:${PACT_CLI_DOCKER_VERSION}
 PACT_BROKER_COMMAND=pact-broker
