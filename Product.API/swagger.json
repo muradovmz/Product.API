@@ -100,10 +100,6 @@
           "price": {
             "type": "number",
             "format": "double"
-          },
-          "price2": {
-            "type": "number",
-            "format": "double"
           }
         },
         "additionalProperties": false

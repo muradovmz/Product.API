@@ -2,17 +2,15 @@
 {
     public class Product
     {
-        public Product(int id, string name, double price, double price2)
+        public Product(int id, string name, double price)
         {
             Id = id;
             Name = name;
             Price = price;
-            Price2 = price2;
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
-        public double Price2 { get; set; }
     }
 }

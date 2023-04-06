@@ -7,9 +7,9 @@
         public ProductRepository()
         {
             Products = new List<Product>();
-            Products.Add(new Product(1,"ragaca1",10, 10));
-            Products.Add(new Product(2,"ragaca2",20, 20));
-            Products.Add(new Product(3,"ragaca3",30, 30));
+            Products.Add(new Product(1,"ragaca1",10));
+            Products.Add(new Product(2,"ragaca2",20));
+            Products.Add(new Product(3,"ragaca3",30));
         }
     }
 }
