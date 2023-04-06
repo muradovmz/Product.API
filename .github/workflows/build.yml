@@ -26,6 +26,10 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: install
         run: make publish_dll
+      - name: install swagger tool
+        run:  dotnet tool install --version 6.4.0 Swashbuckle.AspNetCore.Cli
+      - name: generate swagger
+        run: dotnet swagger tofile --output ./Product.API/swagger.json product.api/bin/debug/net6.0/product.Api.dll v1
       - name: CI
         run: GIT_BRANCH=${GITHUB_REF:11} make ci
 
